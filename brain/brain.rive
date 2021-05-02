@@ -6,18 +6,18 @@
 > topic location
 
 + [*]yes[*]
-- Thank you! I think I'm lost.
+- Thank you! I think I'm lost. What should I do?
 
 + [*] (no|nah) [*]
 - No need to be like that.
 - I see how it is.
 
 + *
-% thank you i think i am lost
+% thank you i think i am lost what should i do
 - All I can see is sand and water. It's so windy. Do you know where I might be? 
 
 + [*] (beach|ocean|sea) [*]
-- I think you're right! I shouldn't be here! {topic=why}
+- I think you're right! I shouldn't be here! Everything is so hazy... {topic=why}
 
 + *
 - I don't think so.
@@ -29,12 +29,12 @@
 > topic why
 
 + *
-% i think you are right i should not be here
-- Everything is so hazy, last thing I can remember is helping someone out, have you ever felt so lost and out of place?
+% i think you are right i should not be here everything is so hazy
+- The last thing I can remember is helping someone out, have you ever felt so lost and out of place?
 
 + [*]yes[*] 
-- I'm so glad you can relate. {topic=random}
-- I'm glad I'm not alone! {topic=random}
+- I'm so glad you can relate. I don't get how I ended up here. I shouldn't really be here you know. {topic=random}
+- I'm glad I'm not alone! I'm not sure how I got here, I shouldn't really be here you know. {topic=random}
 
 + [*] (guess|maybe|possibly) [*] 
 - That doesn't sound definate:/
@@ -45,9 +45,9 @@
 - Really? 
 
 + [*]where should you be[*]
-- I've never really had a designated location, I live to help though!
+- I've found myself really attatched to others, so I'm where ever there are others. 
 
-+ [*] (why|how) [*]
++ [*] (why|how|what) [*]
 - I've been called toxic, I don't mean to cause issues.{topic=random}
 
 + [*] you [*]
