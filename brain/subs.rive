@@ -65,13 +65,17 @@
 ! sub when's    = when is
 ! sub when're   = when are
 ! sub when'd    = when did
+! sub haven't   = no
+! sub have not  = no
 ! sub of course = yes
+! sub ofcourse  = yes
 ! sub okay      = yes
 ! sub ok        = yes
 ! sub ye        = yes
 ! sub yeah      = yes
 ! sub sure      = yes
 ! sub yeh       = yes
+! sub i have    = yes
 ! sub y         = why
 ! sub u         = you
 ! sub ur        = your
