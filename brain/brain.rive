@@ -1,36 +1,76 @@
 ! version = 2.0
 
-+ [*] hello [*] 
-- Hi
++ [*]hello[*]
+- Hi, I was hoping you could help me out?
 
-+ * 
-- could you help me out? 
++ [*]yes[*]
+- Thank you! I think I'm lost.{topic=location}
 
-> topic location 
-+ (what is happened| yes| sure | why not | what do you want|what can I help you with | do you need help | how can I help|what do you need|of course) 
-% could you help me out 
-- I think i'm lost. 
+> topic location
 
-+ [*] (what do you see | can you see anything | what's around you| where are you) [*] 
-% i think im lost 
-- I don't know where I am. There's water and stones, it's so windy. Do you know where this is?! 
++ *
+% thank you i think i am lost
+- All I can see is sand and water. It's so windy. Do you know where I might be? 
 
-+ [*] (sea|ocean|beach|river|lake|pool) [*] 
-% I don't know where I am. There's water and stones, it's so windy. Do you know where this is?! 
-- I think it's the sea! I'm not mean't to be here. 
++ [*] (beach|ocean|sea) [*]
+- I think you're right! I shouldn't be here! {topic=why}
 
-+ [*] (why not|where are you meant to be| where are you supposed to be|where do you live) [*] 
-- I was left all alone, 
++ *
+- I don't think so.
+- No, that's not quite it.
+- I don't think that's correct.
+- There's no sand and water in "<star>" !
+< topic
 
-+ [*] (what are you|who are you) [*] 
-- I can't remember right now, but i'm stuck in something... alive!!🦜 
-+ [*] (bird|what are you stuck in) [*] - It's a seagull! 
+> topic why
+
++ *
+% i think you are right i should not be here
+- Everything is so hazy, last thing I can remember is helping someone out, have you ever felt so lost and out of place?
+
++ [*]yes[*] 
+- I'm so glad you can relate. {topic=random}
+- I'm glad I'm not alone! {topic=random}
+
++ [*] (guess|maybe|possibly) [*] 
+- That doesn't sound definate:/
+- I sort of expected a more concrete answer.
+
++ [*] (no|nah|nope) [*]
+- Oh, I see... 
+- Really? 
+
++ [*]where should you be[*]
+- I've never really had a designated location, I live to help though!
+
++ [*] (why|how) [*]
+- I've been called toxic, I don't mean to cause issues.{topic=random}
+
++ [*] you [*]
+- I'm not fully sure yet. 
+
++ *
+- I don't understand.
+- I don't get it.
+- That doesn't seem right.
 
 < topic
 
++ what is your name
+- Something happened and I can't remember.
 
-+ * 
-- Sorry did not get what you said 
-- I am afraid that I can not understand you 
-- Sorry can you please elaborate that for me 
++ my name is *
+- Nice to meet you <star>
+- Nice meeting you <star>
+
++ thank you
+- You are welcome
+- Welcome
+- No problem
+- No worries!
+
++ *
+- Sorry did not get what you said
+- I am afraid that I can not understand you
+- Sorry can you please elaborate that for me
 - I don't get it!

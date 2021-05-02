@@ -8,6 +8,8 @@
 ! var name     = RB
 
 // Substitutions
+! sub hi        = hello
+! sub hiya      = hello 
 ! sub &quot;    = "
 ! sub &apos;    = '
 ! sub &amp;     = &
@@ -63,6 +65,13 @@
 ! sub when's    = when is
 ! sub when're   = when are
 ! sub when'd    = when did
+! sub of course = yes
+! sub okay      = yes
+! sub ok        = yes
+! sub ye        = yes
+! sub yeah      = yes
+! sub sure      = yes
+! sub yeh       = yes
 ! sub y         = why
 ! sub u         = you
 ! sub ur        = your
