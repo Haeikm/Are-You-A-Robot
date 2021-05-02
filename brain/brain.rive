@@ -1,12 +1,16 @@
 ! version = 2.0
 
 + [*]hello[*]
-- Hi, I was hoping you could help me out?
-
-+ [*]yes[*]
-- Thank you! I think I'm lost.{topic=location}
+- Hi, I was hoping you could help me out?{topic=location}
 
 > topic location
+
++ [*]yes[*]
+- Thank you! I think I'm lost.
+
++ [*] (no|nah) [*]
+- No need to be like that.
+- I see how it is.
 
 + *
 % thank you i think i am lost
@@ -57,11 +61,14 @@
 < topic
 
 + what is your name
-- Something happened and I can't remember.
+- Something happened and I can't remember. What is yours?
 
 + my name is *
-- Nice to meet you <star>
-- Nice meeting you <star>
+- <set name=<star>>It's a pleasure to meet you, <getname>.
+
++ [*] what is my name [*] 
+- You said it was <getname>.
+- I'm pretty sure it's <getname>.
 
 + thank you
 - You are welcome
