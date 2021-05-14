@@ -40,9 +40,9 @@
 - That doesn't sound definate:/
 - I sort of expected a more concrete answer.
 
-+ [*] (no|nah|nope|notr) [*]
++ [*] (no|nah|nope|not) [*]
 - Oh, I see... 
-- Really?
+- Really? That wasn't the answer I was hoping for.
 
 + [*]where should you be[*]
 - I've found myself really attatched to people, so I'm where ever there are others. 
@@ -54,8 +54,7 @@
 - I've been called toxic, I don't mean to cause issues.{topic=random}
 
 + [*]what do you do[*]
-- I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.
-
+- I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=random}
 
 + [*] you [*]
 - I'm not fully sure yet. 
@@ -69,6 +68,13 @@
 
 + what is your name
 - Something happened and I can't remember. What is yours?
+
++ [*](toxic|enemies|enemy)[*]
+- I hurt everything around me...        oh my god! I'm stuck on something!..    It's moving..
+
++ *
+% i hurt everything around me oh my god i m stucck on something its moving
+- I think it's a seagull, I'm trapped around it's neck!
 
 + my name is *
 - <set name=<star>>It's a pleasure to meet you, <getname>.
