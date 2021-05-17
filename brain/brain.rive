@@ -73,7 +73,7 @@
 - I hurt everything around me...        oh my god! I'm stuck on something!..    It's moving..
 
 + *
-% i hurt everything around me oh my god i m stucck on something its moving
+% i hurt everything around me oh my god i m stuck on something its moving
 - I think it's a seagull, I'm trapped around it's neck!
 
 + my name is *
@@ -82,6 +82,9 @@
 + [*] what is my name [*] 
 - You said it was <getname>.
 - I'm pretty sure it's <getname>.
+
++ show me what you look like
+- <img src;"../images/mask.jpg">
 
 + thank you
 - You are welcome

@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #f2f2f2;
+  background-image: url("https://www.treehugger.com/thmb/xPeXCbh_Yb5tGtATB-j1XtInMbM=/3500x2334/filters:fill(auto,1)/closeupbrightbluewater-61f0f88d81004729a7385484bcd38998.jpg");
 }
 
 .title {
@@ -20,7 +20,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: blueviolet;
+  color: rgb(42, 10, 158);
 }
 
 .wrapper {
@@ -28,9 +28,9 @@ body {
 }
 
 .chat {
-  background: white;
-  box-shadow: 10px 10px 0px blueviolet;
-  overflow: scroll;
+  background: 255,255,0.5;
+  box-shadow: 255,255,0.5;
+  overflow-y: scroll;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -53,18 +53,22 @@ body {
 }
 
 .messages div a {
-  color: white;
+  color: 255,255,0.5;
 }
 
 .messages div a:hover {
-  color: blueviolet;
+  color: rgb(42, 10, 158);
 }
 
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background: black;
-  color: white;
+  background: rgb(0, 174, 255);
+  color: rgb(245, 214, 219);
+}
+
+.messages img {
+  width: 100%;
 }
 
 .messages .self {
@@ -72,8 +76,8 @@ body {
   margin-right: 20px;
   margin-left: auto;
   background: white;
-  border: 1px solid blueviolet;
-  color: blueviolet;
+  border: 1px solid rgb(42, 10, 158);
+  color: rgb(42, 10, 158);
 }
 
 .actions {
@@ -97,7 +101,7 @@ body {
 }
 
 input:focus {
-  border-bottom: 2px solid blueviolet;
+  border-bottom: 2px solid rgb(42, 10, 158);
 }
 
 @media all and (min-width: 720px) {
