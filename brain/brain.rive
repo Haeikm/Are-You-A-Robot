@@ -41,23 +41,17 @@
 - I sort of expected a more concrete answer.
 
 + [*] (no|nah|nope|not) [*]
-- Oh, I see... 
-- Really? That wasn't the answer I was hoping for.
+- Oh, I see... That's unexpected, I really don't belong at the beach.
+- Really? That wasn't the answer I was hoping for. I really don't know how I ended up at the beach.
 
-+ [*]where should you be[*]
-- I've found myself really attatched to people, so I'm where ever there are others. 
-
-+ [*]where are you meant to be[*]
-- I've found myself really attatched to people, so I'm where ever there are others. 
++ [*]where[*]
+- I've found myself really attatched to people, so I'm where ever there are others although I'm not one{topic=random}
 
 + [*] (why|how|what) [*]
-- I've been called toxic, I don't mean to cause issues.{topic=random}
+- I've been called toxic, I don't mean to cause issues.{topic=seagull}
 
 + [*]what do you do[*]
-- I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=random}
-
-+ [*] you [*]
-- I'm not fully sure yet. 
+- I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=seagull}
 
 + *
 - I don't understand.
@@ -66,15 +60,72 @@
 
 < topic
 
-+ what is your name
-- Something happened and I can't remember. What is yours?
-
+> topic seagull
 + [*](toxic|enemies|enemy)[*]
-- I hurt everything around me...        oh my god! I'm stuck on something!..    It's moving..
+- I hurt everything around me...        oh my god! I'm stuck on something!..    I think it's moving..
 
 + *
-% i hurt everything around me oh my god i m stuck on something its moving
-- I think it's a seagull, I'm trapped around it's neck!
+- I'm quite toxic tbf.
+
++ *
+% i hurt everything around me oh my god im stuck on something i think its moving
+- I think it's a seagull, I'm trapped around it's neck! I'm meant to protect everyone!
+
++ *
+% i think its a seagull im trapped around its neck im meant to protect everyone
+- It's all your fault! you people left me here.
+
++ *
+% its all your fault you people left me here
+- You care about nothing but yourselves. Selfish. I wish I could rot away but I'm stuck here for 450 years. Do you know how that feels? not being able to let go whilst being aware of the damage you're causing.
+
++ *
+% you care about nothing but yourselves selfish i wish i could rot away but im stuck here for 450 years do you know how that feels not being able to let go whilst being aware of the damage youre causing
+- You've prevented me from helping you further, how many of me do you think you "lose" a day? a week? a month?
+
++ *
+% youve prevented me from helping you further how many of me do you think you lose a day a week a month
+- up to 94 million a week! how are you not aware of the damage you cause.
+
+< topic
+
++ [*]what are you[*]
+- I'm sort of a shield I guess. I was designed to protect you from that one virus.
+
++ [*](corona|covid)[*]
+- Yeah, the dreaded C word. Humans are a bit problamatic aren't they, not only did you cause that you also created me. I guess you were under the impression that you are more important that the environment.
+
++ *
+% yeah the dreaded c word humans are a bit problamatic arent they not only did you cause that you also created me i guess you were under the impression that you are more important that the environment
+- I don't really decompose you know, takes a few hundered years for that to happen. My previous "owner" just threw me out on the beach. Would you like to talk about how you can get rid of me safely?
+
++ [*]yes[*]
+- Great! I hope you already knew non resuable masks were bad for the environment. {topic=dispose}
+
+> topic dispose
+
++ *
+% great i hope you already knew masks were bad for the environment
+- I don't think the person who threw me out was aware of this but I can actually be turned into something useful!
+
++ *
+% i dont think the person who threw me out was aware of this but i can actually be turned into something useful
+- There's a company called reworked that actually makes me into furniture, wow imagine being a high quality chair! absolute luxury. There's some other companies that finally recyle me too! want to hear about them?
+
++ [*]yes[*] 
+- That's what I like to hear! On the topic of transformation the smart ones amoungst you have figured out I can actually become a road. I'm not boring you am I ?
+
++ [*]no[*]
+- Great! Wilkos has actually started recyling me, absolute god sends. There's also BMW and Pennels Garden Centre which is providing recyling points but I think these are only for staff members.
+
+< topic
+
++ [*] (guess|maybe|possibly) [*] 
+- Can you be a bit more concrete?
+- A yes or no would suffice.
+
++ [*] (no|nah|nope|not) [*]
+- Alight that's fine... how about getting to know each other more? what's your name?
 
 + my name is *
 - <set name=<star>>It's a pleasure to meet you, <getname>.
@@ -91,6 +142,9 @@
 - Welcome
 - No problem
 - No worries!
+
++ what is your name
+- I don't think I ever had one.
 
 + *
 - Sorry did not get what you said
