@@ -10,6 +10,8 @@
 // Substitutions
 ! sub hi        = hello
 ! sub hiya      = hello 
+! sub hey       = hello
+! sub helo       = hello
 ! sub &quot;    = "
 ! sub &apos;    = '
 ! sub &amp;     = &
@@ -56,6 +58,7 @@
 ! sub don't     = do not
 ! sub didn't    = did not
 ! sub it's      = it is
+! sub aren't    = are not
 ! sub could've  = could have
 ! sub couldn't  = could not
 ! sub should've = should have

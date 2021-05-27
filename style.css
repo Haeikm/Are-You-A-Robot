@@ -1,14 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
 
 * {
-  font-family: "Courier New", Arial;
+  font-family: "roc grotesk", Arial;
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  background-image: url("https://www.treehugger.com/thmb/xPeXCbh_Yb5tGtATB-j1XtInMbM=/3500x2334/filters:fill(auto,1)/closeupbrightbluewater-61f0f88d81004729a7385484bcd38998.jpg");
+  background-image: url("https://i.gifer.com/6jul.gif");
+  background-repeat: repeat;
+  background-size: 1300px 1000px;
+  background-position: center;
 }
 
 .title {
@@ -20,7 +23,8 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: rgb(42, 10, 158);
+  color: rgb(32, 60, 218);
+  font-size: 16pt;
 }
 
 .wrapper {
@@ -56,14 +60,14 @@ body {
 }
 
 .messages div a:hover {
-  color: rgb(42, 10, 158);
+  color: rgb(32, 60, 218);
 }
 
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background: rgb(0, 174, 255);
-  color: rgb(245, 214, 219);
+  background: rgb(32, 60, 218);
+  color: rgb(255, 255, 255);
 }
 
 .messages img {
@@ -75,8 +79,8 @@ body {
   margin-right: 20px;
   margin-left: auto;
   background: white;
-  border: 1px solid rgb(42, 10, 158);
-  color: rgb(42, 10, 158);
+  border: 1px solid rgb(32, 60, 218);
+  color: rgb(32, 60, 218);
 }
 
 .actions {
@@ -85,7 +89,7 @@ body {
   position: sticky;
   bottom: -1px;
   padding: 10px 0px 20px;
-  background: white;
+  background: 255,255,0.5;
 }
 
 .actions input {
@@ -100,7 +104,7 @@ body {
 }
 
 input:focus {
-  border-bottom: 2px solid rgb(42, 10, 158);
+  border-bottom: 2px solid rgb(32, 60, 218);
 }
 
 @media all and (min-width: 720px) {

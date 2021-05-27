@@ -1,91 +1,161 @@
 ! version = 2.0
 
 + [*]hello[*]
-- Hi, I was hoping you could help me out?{topic=location}
+- Hi✋ What is your name?{topic=asked_name}
+- Hello, human. What is your name?{topic=asked_name}
+- Yo, What's up? What is your name?{topic=asked_name}
+- hi, i'm chatbot,what is your name?{topic=asked_name}
+
+> topic asked_name
+
+    + my name is _
+    - I only need your first name
+
+    + [*] * [*]
+    - <set firstname=<star>>Nice to meet you, <get firstname>! Could you tell me your age? 
+
+    + who am i 
+    - you're <get firstname>, aren't you?{topic=age}
+
+    + do you know my name
+    - Yes, your name is <get firstname>.{topic=age}
+
+    + what is my name
+    - You are <get firstname>{topic=age}
+
+    + my name is *
+    - I only want your first name{topic=age}
+
+    + my name is #
+    - your name is a number? Come on~{topic=age}
+
+< topic
+
+> topic age
+
+    + i am # years old
+    - A lot of people are <number> years old.
+    - <set age=<star>>wow,<get age> is old
+
+    + how old am i
+    - You are <get age> years old.
+
+< topic 
+
++ [*] how have you been [*]
+- Not too good, I was hoping you could help me out. If you can, say yes!{topic=location}
+- I feel terrible. i'd like to ask you for your help. If you can, say yes!{topic=location}
+- I am depressed. Could you give me a hand? If you can, say yes!{topic=location}
+- I am in chaos.....Could you help me out? If you can, say yes!{topic=location}
+
++ [*]how are you[*]
+- Not too good, I was hoping you could help me out. If you can, say yes!{topic=location}
+- I feel terrible. i'd like to ask you for your help. If you can, say yes!{topic=location}
+- I am depressed. Could you give me a hand? If you can, say yes!{topic=location}
+- I am in chaos.....Could you help me out? If you can, say yes!{topic=location}
 
 > topic location
 
-+ [*]yes[*]
-- Thank you! I think I'm lost. What should I do?
+    + [*]yes[*]
+    - Thank you! I think I'm lost. What should I do?
 
-+ [*] (no|nah) [*]
-- No need to be like that.
-- I see how it is.
+    + [*] (no|nah) [*]
+    - No need to be like that.
+    - I see how it is.
+    - come on! you just guess and tell me where it is if i tell you what i am seeing. Please just say yes!{weight=50}{topic=location}
+    - This is emergency!! just say yes, please...（Ω Д Ω）{weight=30}{topic=location}
 
-+ *
-% thank you i think i am lost what should i do
-- All I can see is sand and water. It's so windy. Do you know where I might be? 
+    + *
+    % thank you i think i am lost what should i do
+    - All I can see is sand and water. It's so windy. Do you know where I might be? 
 
-+ [*] (beach|ocean|sea) [*]
-- I think you're right! I shouldn't be here! Everything is so hazy... {topic=why}
+    + [*] (beach|ocean|sea) [*]
+    - I think you're right! I shouldn't be here! Everything is so hazy... {topic=why}
 
-+ *
-- I don't think so.
-- No, that's not quite it.
-- I don't think that's correct.
-- There's no sand and water in "<star>" !
+    + *
+    - I don't think so.
+    - No, that's not quite it.
+    - I don't think that's correct.
+    - There's no sand and water in "<star>" !
+
 < topic
 
 > topic why
 
-+ *
-% i think you are right i should not be here everything is so hazy
-- The last thing I can remember is helping someone out, have you ever felt so lost and out of place?
+    + *
+    % i think you are right i should not be here everything is so hazy
+    - The last thing I can remember is helping someone out, have you ever felt so lost and out of place?
 
-+ [*]yes[*] 
-- I'm so glad you can relate. I don't get how I ended up here. I shouldn't really be here you know.
-- I'm glad I'm not alone! I'm not sure how I got here, I shouldn't really be here you know.
+    + [*]yes[*] 
+    - I'm so glad you can relate. I don't get how I ended up here. I should really be somewhere else!.{weight=2}
+    - I'm glad I'm not alone! I'm not sure how I got here, I'm mean't to be somewhere else.{weight=2}
+    - I'm happy you feel the same way, I REALLY shouldn't be HERE.
+    - It's great to know others feel the same, I feel isolated from others sometimes, some people call me TOXIC.
 
-+ [*] (guess|maybe|possibly) [*] 
-- That doesn't sound definate:/
-- I sort of expected a more concrete answer.
+    + [*] (guess|maybe|possibly) [*] 
+    - That doesn't sound definate:/
+    - I sort of expected a more concrete answer.
 
-+ [*] (no|nah|nope|not) [*]
-- Oh, I see... That's unexpected, I really don't belong at the beach.
-- Really? That wasn't the answer I was hoping for. I really don't know how I ended up at the beach.
+    + [*] (no|nah|nope|not) [*]
+    - Oh, I see... That's unexpected, I really don't belong at the beach.
+    - Really? That wasn't the answer I was hoping for. I really don't know how I ended up at the beach.
 
-+ [*]where[*]
-- I've found myself really attatched to people, so I'm where ever there are others although I'm not one{topic=random}
+    + [*]where[*]
+    - I've found myself really attatched to people, so I'm where ever there are others although I'm not one{topic=random}
 
-+ [*] (why|how|what) [*]
-- I've been called toxic, I don't mean to cause issues.{topic=seagull}
+    + [*] (why|how|what) [*]
+    - I've been called toxic, I don't mean to cause issues.{topic=seagull}
 
-+ [*]what do you do[*]
-- I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=seagull}
+    + [*]what do you do[*]
+    - I usually protect people around the world from invisible enemies but today I find out that I can be an enemy for the planet too.{topic=seagull}
 
-+ *
-- I don't understand.
-- I don't get it.
-- That doesn't seem right.
+    + *
+    - I don't understand.
+    - I don't get it.
+    - That doesn't seem right.
 
 < topic
 
 > topic seagull
-+ [*](toxic|enemies|enemy)[*]
-- I hurt everything around me...        oh my god! I'm stuck on something!..    I think it's moving..
 
-+ *
-- I'm quite toxic tbf.
+    + [*](toxic|enemies|enemy)[*]
+    - I hurt everything around me...        oh my god! I'm stuck on something!..    I think it's moving..
 
-+ *
-% i hurt everything around me oh my god im stuck on something i think its moving
-- I think it's a seagull, I'm trapped around it's neck! I'm meant to protect everyone!
+    + *
+    - I wish I wasn't toxic...
+    - I hope I did my job protecting my "owner" from enemies.
 
-+ *
-% i think its a seagull im trapped around its neck im meant to protect everyone
-- It's all your fault! you people left me here.
+    + *
+    % i hurt everything around me oh my god im stuck on something i think its moving
+    - I think it's a seagull, I'm trapped around it's neck! I'm meant to protect everyone!
 
-+ *
-% its all your fault you people left me here
-- You care about nothing but yourselves. Selfish. I wish I could rot away but I'm stuck here for 450 years. Do you know how that feels? not being able to let go whilst being aware of the damage you're causing.
+    + *
+    % i think its a seagull im trapped around its neck im meant to protect everyone
+    - It's all your fault! you people left me here.
 
-+ *
-% you care about nothing but yourselves selfish i wish i could rot away but im stuck here for 450 years do you know how that feels not being able to let go whilst being aware of the damage youre causing
-- You've prevented me from helping you further, how many of me do you think you "lose" a day? a week? a month?
+    + *
+    % its all your fault you people left me here
+    - You care about nothing but yourselves. Selfish. I wish I could rot away but I'm stuck here for 450 years. Do you know how that feels? not being able to let go whilst being aware of the damage you're causing.
 
-+ *
-% youve prevented me from helping you further how many of me do you think you lose a day a week a month
-- up to 94 million a week! how are you not aware of the damage you cause.
+    + *
+    % you care about nothing but yourselves selfish i wish i could rot away but im stuck here for 450 years do you know how that feels not being able to let go whilst being aware of the damage youre causing
+    - You've prevented me from helping you further, how many of me do you think you "lose" a day? a week? a month?
+
+    + *
+    % youve prevented me from helping you further how many of me do you think you lose a day a week a month
+    - up to 94 million a week! how are you not aware of the damage you cause. {topic=no}
+
+< topic
+
+> topic no
+
+    + *
+    - I don't want to talk to you anymore.
+    - You've ruined my mood.
+    - All you do is cause harm. Go away.
+    - Leave me alone.
+    - No.
+    - Let me suffer alone.
 
 < topic
 
@@ -93,30 +163,32 @@
 - I'm sort of a shield I guess. I was designed to protect you from that one virus.
 
 + [*](corona|covid)[*]
-- Yeah, the dreaded C word. Humans are a bit problamatic aren't they, not only did you cause that you also created me. I guess you were under the impression that you are more important that the environment.
+- Yeah, the dreaded C word. Humans are a bit problamatic, not only did you cause that you also created me. I guess you thought you were more important than the environment.
 
 + *
-% yeah the dreaded c word humans are a bit problamatic arent they not only did you cause that you also created me i guess you were under the impression that you are more important that the environment
+% yeah the dreaded c word humans are a bit problamatic not only did you cause that you also created me i guess you thought you were more important than the environment
 - I don't really decompose you know, takes a few hundered years for that to happen. My previous "owner" just threw me out on the beach. Would you like to talk about how you can get rid of me safely?
+
 
 + [*]yes[*]
 - Great! I hope you already knew non resuable masks were bad for the environment. {topic=dispose}
 
 > topic dispose
 
-+ *
-% great i hope you already knew masks were bad for the environment
-- I don't think the person who threw me out was aware of this but I can actually be turned into something useful!
+    + *
+    % great i hope you already knew masks were bad for the environment
+    - I don't think the person who threw me out was aware of this but I can actually be turned into something useful!
 
-+ *
-% i dont think the person who threw me out was aware of this but i can actually be turned into something useful
-- There's a company called reworked that actually makes me into furniture, wow imagine being a high quality chair! absolute luxury. There's some other companies that finally recyle me too! want to hear about them?
+    + *
+    % i dont think the person who threw me out was aware of this but i can actually be turned into something useful
+    - There's a company called reworked that actually makes me into furniture, wow imagine being a high quality chair! absolute luxury. There's some other companies that finally recyle me too! want to hear about them?
 
-+ [*]yes[*] 
-- That's what I like to hear! On the topic of transformation the smart ones amoungst you have figured out I can actually become a road. I'm not boring you am I ?
+    + [*]yes[*] 
+    - That's what I like to hear! On the topic of transformation the smart ones amoungst you have figured out I can actually become a road. I'm not boring you am I?
 
-+ [*]no[*]
-- Great! Wilkos has actually started recyling me, absolute god sends. There's also BMW and Pennels Garden Centre which is providing recyling points but I think these are only for staff members.
+    + [*]no[*]
+    - Great! Wilkos has actually started recyling me, absolute god sends. There's also BMW and Pennels Garden Centre which is providing recyling points but I think these are only for staff members.
+    - BWM and Pennels Garden Centre provide recycling points for masks but only for staff. I know Wilkos has now started recycling me for the public tho!
 
 < topic
 
@@ -127,15 +199,8 @@
 + [*] (no|nah|nope|not) [*]
 - Alight that's fine... how about getting to know each other more? what's your name?
 
-+ my name is *
-- <set name=<star>>It's a pleasure to meet you, <getname>.
-
-+ [*] what is my name [*] 
-- You said it was <getname>.
-- I'm pretty sure it's <getname>.
-
 + show me what you look like
-- <img src;"..//images/mask.jpg">
+- <img src="..//images/mask.jpg">
 
 + thank you
 - You are welcome
@@ -146,8 +211,23 @@
 + what is your name
 - I don't think I ever had one.
 
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
++ [*]what (happens|happened)[*]
+- I was in an accident. I lost my memories:( \n
+^ But my memories come back little by little now.
+^ After being abandoned on the road by my owner, I've been in big trouble with other trashes on the street{topic=other_trashes}
+
+> topic other_trashes 
+    
+    + [*] (trash|trashes) [*]
+    - It was the sunny day when i was dropped on the street and I've met many friends there and evils too. \n
+    ^ Could you guess what kinds of trashes i've met there?
+
+    + *
+    % could you imagine how many and what kinds of trashes are there
+    - Yeah, leftover cigarettes, cans, bottles, plastic cups from different franchaies coffee shops, coins, chweing gum.....and so on. \n
+    ^ There was even a thong that someone wore,,,,,stinky🤢 \n
+    ^ I was newborn on the street.\n
+    ^ As you know many masks started appearing on the streets at that time, \n 
+    ^ So we were annoying beings invading the territory for them.
+
+< topic
