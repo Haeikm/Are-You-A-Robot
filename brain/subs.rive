@@ -11,7 +11,7 @@
 ! sub hi        = hello
 ! sub hiya      = hello 
 ! sub hey       = hello
-! sub helo       = hello
+! sub helo      = hello
 ! sub &quot;    = "
 ! sub &apos;    = '
 ! sub &amp;     = &
@@ -41,6 +41,7 @@
 ! sub they're   = they are
 ! sub they've   = they have
 ! sub they'll   = they will
+! sub that's    = that is
 ! sub we'd      = we would
 ! sub we're     = we are
 ! sub we've     = we have
@@ -78,6 +79,7 @@
 ! sub yeah      = yes
 ! sub sure      = yes
 ! sub yeh       = yes
+! sub alright   = yes
 ! sub i have    = yes
 ! sub y         = why
 ! sub u         = you
@@ -105,6 +107,9 @@
 ! sub aman      = am an
 ! sub amon      = am on
 ! sub amnot     = am not
+! sub cant      = can not
+! sub cannot    = can not
+! sub can't     = can not
 ! sub realy     = really
 ! sub iamusing  = i am using
 ! sub amleaving = am leaving

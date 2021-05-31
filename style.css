@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("https://i.gifer.com/6jul.gif");
+  background-image: url("https://media3.giphy.com/media/JXHhI4o9NCf8k/giphy.gif?cid=790b76110ba808de9789fe9fd63286a96a10b4059c5d7e07&rid=giphy.gif&ct=g");
   background-repeat: repeat;
   background-size: 1300px 1000px;
   background-position: center;
@@ -23,7 +23,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: rgb(32, 60, 218);
+  color: rgb(255, 255, 255);
   font-size: 16pt;
 }
 
@@ -60,13 +60,13 @@ body {
 }
 
 .messages div a:hover {
-  color: rgb(32, 60, 218);
+  color: rgb(15, 97, 151);
 }
 
 .messages .bot {
   text-align: left;
   margin-right: auto;
-  background: rgb(32, 60, 218);
+  background: rgb(15, 97, 151);
   color: rgb(255, 255, 255);
 }
 
@@ -79,8 +79,8 @@ body {
   margin-right: 20px;
   margin-left: auto;
   background: white;
-  border: 1px solid rgb(32, 60, 218);
-  color: rgb(32, 60, 218);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(15, 97, 151);
 }
 
 .actions {
@@ -104,7 +104,7 @@ body {
 }
 
 input:focus {
-  border-bottom: 2px solid rgb(32, 60, 218);
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 @media all and (min-width: 720px) {
