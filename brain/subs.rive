@@ -80,6 +80,7 @@
 ! sub yeh       = yes
 ! sub alright   = yes
 ! sub i have    = yes
+! sub not sure  = i do not know
 ! sub y         = why
 ! sub u         = you
 ! sub ur        = your
@@ -118,6 +119,7 @@
 ! sub ain't     = is not
 ! sub aint      = is not
 ! sub wanna     = want to
+! sub idk       = i do not know
 ! sub brb       = be right back
 ! sub bbl       = be back later
 ! sub gtg       = got to go

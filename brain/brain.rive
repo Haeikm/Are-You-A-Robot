@@ -59,14 +59,20 @@
 
 > topic location
 
-    + [*]yes[*]
+    + [*](yes|ok|okay)[*]
     - Thank you! I think I'm lost. What should I do?
 
+    + [*]help[*]
+    - Please say yes to helping me!
+
+    + [*]can i[*]
+    - All I can see is sand and water do you know where I could be?
+
     + [*] (no|nah) [*]
-    - No need to be like that.
-    - I see how it is.
-    - Come on! you just guess and tell me where it is if i tell you what i am seeing. Please just say yes!
-    - This is emergency!! just say yes, please...
+    - No need to be like that. {topic=ok}
+    - I see how it is.{topic=ok}
+    - Come on! Please just say yes!{topic=ok}
+    - This is emergency!! Just say yes, please...{topic=ok}
 
     + *
     % thank you i think i am lost what should i do
@@ -81,11 +87,25 @@
     + [*](ok|okay)[*]
     - That's not a definate answer... please be more specific.
 
+    + [*]not sure[*]
+    - Where do you normally find sand and water? I can't really think properly at the moment.
+
+    + [*]i do not know[*]
+    - I can't really remember much... do you know where you usually find sand and water?
+
     + *
     - I don't think so.
     - No, that's not quite it.
     - I don't think that's correct.
     - There's no sand and water in "<star>" !
+
+< topic
+
+> topic ok
+
++ *
+- Seeming as you won't help I won't talk to you...{topic=no}
+- There's no point... Leave me alone. {topic=no}
 
 < topic
 
@@ -98,7 +118,7 @@
     + [*]yes[*] 
     - I'm so glad you can relate. I don't get how I ended up here. I should really be somewhere else!{weight=4}
     - I'm glad I'm not alone! I'm not sure how I got here, I'm meant to be somewhere else.{weight=4}
-    - I'm happy you feel the same way, I REALLY shouldn't be HERE.{weight=1}
+    - I'm happy you feel the same way, I REALLY shouldn't be HERE.{weight=2}
     - It's great to know others feel the same, I feel isolated from others sometimes, some people call me toxic.
 
     + [*] (guess|maybe|possibly) [*] 
@@ -125,10 +145,10 @@
     + [*]what are you[*]
     - Not human that's for sure... you guys are kind of horrid... I was protecting one of you from that virus... what was the name of it again?{topic=random}
 
-    + [*]why[*]
+    + [*](why|what)[*]
     - I'm sure there was some sort of accident, a mistake... I'm sorry that I cant remember much at the moment. I know I was helping someone out because of that virus... what was the name of it again?{topic=random}
 
-    + [*] toxic [*]
+    + [*]toxic[*]
     - I've been called toxic, I don't mean to cause issues.{topic=seagull}
 
     + [*](remember|remembered)[*]
@@ -199,7 +219,7 @@
 - I don't think my handles are strong enough to carry me very far...
 
 + [*]you[*]
-- I think I was sort of a shield. I know was designed to protect you from that one virus. Could you remind me of it's name again?
+- I think I was sort of a shield. I know I was designed to protect you from that one virus. Could you remind me of it's name again?
 
 + [*]what[*]
 - I'm certain I remember being dropped... I was protecting my "owner" from that one virus... what's the name of it again?
@@ -294,8 +314,8 @@
 > topic environment
 
 + *
-- I can tell you about microplastics, landfills, ocean pollution and biohazards. Which one do you want to hear about? {weight=2}
-- You're options of topic are microplastics, landfills, ocean pollution and biohazards. What would you like to discuss? {wright=2}
+- I can tell you about microplastics, landfills, ocean pollution and biohazards. Which one do you want to hear about? {weight=1}
+- Your options of topic are microplastics, landfills, ocean pollution and biohazards. What would you like to discuss? {weight=1}
 - We can talk about microplastics, landfills, ocean pollution and biohazards. Unless you're an anti-masker... that would be awkward...
 
 + [*]i am
@@ -306,22 +326,23 @@
 
 + [*]microplastics[*]
 - Every object containing plastic withers away into tiny particles called microplastics, these are not only harmful to the envrionment but also to you! If you eat fish you're most likey also eating plastic. Want to hear about anything else?
+- Humans actually consume a fair amount of microplastics through food and water... although there is no research suggesting this impacts human health surely eating plastic is bad for you...
 
 + [*]landfills[*]
 - I've actually had the displeasure of being in a landfill, it's how I know more than 1.6 billion of us ended up there in a month! {topic=trash}
 
 + [*]pollution[*]
 - Leaving masks where they shouldn't be is a hazard to all the creatures in the ocean! One of the most important ecosystems on earth is the coral reefs, without them you wouldn't survive.
+- The production of non resuable masks poses a danger to earth, most of them have plastic in them meaning they won't deteriorate for hundereds of years.
 
 + [*]biohazards[*]
 - If I'm not disposed of properly and my "owner" had the virus I can still pass on their germs meaning more people are infected.
-
-+ [*]no[*]
-- Would like to hear about when I ended up at a landfill?{topic=trash}
+- Different materials hold on to germs for longer amounts of time, masks are efficiant at protecting you but if you carry the disease unknowingly and you throw your mask on the floor there is a chance of the virus spreading!
 
 + [*]none[*]
-- I don't have any other topics of conversation...
+- I guess that's the end of our chat... I don't really know what else to tell you...
 - I can tell you about masks that are better for the environment? {topic=masks}
+- Would like to hear about when I ended up at a landfill?{topic=trash}
 
 < topic
 
@@ -359,6 +380,7 @@
 
     + *
     - Huh??
+    - Let's talk about the environment. {topic=environment}
 
 < topic
 
