@@ -8,10 +8,85 @@
 }
 
 body {
-  background-image: url("https://media3.giphy.com/media/JXHhI4o9NCf8k/giphy.gif?cid=790b76110ba808de9789fe9fd63286a96a10b4059c5d7e07&rid=giphy.gif&ct=g");
-  background-repeat: repeat;
-  background-size: 1300px 1000px;
-  background-position: center;
+  background-image:url(/images/Purple-15.png),
+  url(/images/K\ -13.png),
+  url(/images/s-12.png),
+  url(/images/Letter\ A\ -11.png),
+  url(/images/Letter\ M-10.png),
+  url(/images/Mask\ icon\ uncut\ -04.png),
+  url(/images/Mask\ icon\ uncut\ -01.png),
+  url(/images/Mask\ icon\ cut-02.png), 
+  url(/images/Scissors-07.png), 
+  url(/images/Bird\ yellow\ -09.png),
+  url(/images/Mask\ icon\ -06.png),
+  url(/images/Mask\ uncut\ -08.png),
+  url(/images/Mask\ icon\ -01.png),
+  url(/images/Mask\ icon\ -04.png),
+  url("/images/ezgif.com-gif-maker\ \(1\).gif");
+
+  background-repeat:no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat,
+  no-repeat, 
+  no-repeat,
+  no-repeat,
+  repeat;
+
+  background-size:90px 90px,
+  130px 130px,
+  100px 100px,
+  100px 100px,
+  110px 110px,
+  100px 100px,
+  100px 100px,
+  130px 130px,
+  100px 100px,
+  400px 400px,
+  180px 180px,
+  120px 120px,
+  100px 100px,
+  100px 100px,
+  1500px 1000px;
+
+  background-position:top +520 left 8%,
+  top +1250 right 20%,
+  top +1225 left 6%,
+  top +150 right 26%,
+  top +200 left 17%,
+  top +350 right 30%,
+  top +450 right 2%,
+  top +800 right 14%,
+  top +50px right 15%,
+  top +750px left 20%, 
+  top +450px left 20%, 
+  top +200px right 11%,
+  top +40px left 15%,
+  top +300px left 5%,
+  center;
+  background-attachment:scroll,
+  scroll,
+  scroll,
+  fixed,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  scroll,
+  fixed,
+  fixed,
+  scroll;
+
 }
 
 .title {
@@ -23,7 +98,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 0);
   font-size: 16pt;
 }
 
