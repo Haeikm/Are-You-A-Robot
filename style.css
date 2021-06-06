@@ -87,6 +87,10 @@ body {
   fixed,
   scroll;
 
+  background-image: url("https://soulerfloat.com/wp-content/uploads/2018/01/floating-water-gif.gif");
+  background-repeat: repeat;
+  background-size: 1300px 1000px;
+  background-position: center;
 }
 
 .title {
